@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+body,ul,li,p{margin:0;padding:0;}
+body{background-color:#EEE;}
+li{list-style:none;}
+a{text-decoration:none;}
+#wrap{
+width:462px;
+height:160px;
+margin:50px auto;
+}
+#wrap .header{
+font-size:0;
+}
+.header span{
+display:inline-block;
+background-color:#000;
+padding:5px 49px;
+font-size:14px;
+color:#FFF;
+cursor:pointer;
+}
+.header span.on{
+background-color:#AAA;
+color:#FFF;
+}
+#wrap .content{position:relative;}
+.content ul{
+position:absolute;
+display:none;
+width:100%;
+top:0;
+left:0;
+}
+.content ul.onmove{display:block;}
+.content ul li{
+background-color:white;
+padding:8px 0 8px 5px;
+border-bottom:1px dashed #AAA;
+text-indent:12px;
+}
+</style>
+</head>
+<body>
+<div id="wrap">
+<div class="header">
+<span class="on">热门排行</span>
+<span>美图快递</span>
+<span>前沿科技</span>
+</div>
+<div class="content">
+<ul class="onmove">
+<li>黄金时间海西板块</li>
+<li>发动机和时代科技</li>
+<li>出口基础上的吧</li>
+<li>分为恢复健康</li>
+</ul>
+<ul>
+<li>符合已给iri未发货</li>
+<li>范文虎凤凰网i瑞文</li>
+<li>分为几类好呢环境</li>
+<li>封为辅i不i问恶女覅</li>
+</ul>
+<ul>
+<li>的金发少女扣税的</li>
+<li>分为我会额外符合你v的温暖</li>
+<li>分为分割为若干若干</li>
+<li>而浪费能量就问二</li>
+</ul>
+</div>
+<script>
+let aSpan=document.getElementsByTagName("span"),
+aUl=document.getElementsByTagName("ul"),
+index=0;
+for(let i=0;i<aSpan.length;i++){
+aSpan[i].onmouseenter=function(){
+aSpan[index].className="";
+aUl[index].className="";
+index=i;
+aSpan[index].className="on";
+aUl[index].className="onmove";
+}
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
